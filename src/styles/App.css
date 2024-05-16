@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,500i,600,700,800i,900i&display=swap');
+
+:root {
+    --bs-body-font-family: Montserrat, serif;
+}
