@@ -1,15 +1,15 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/Logo-V-3-fondo-azul.png";
 import ImageSEO from "../../components/ImageSEO";
 
 function Header() {
     return (
-        <header id="facto_header" className="navigation position-absolute w-100">
+        <header id="facto_header" className="navigation position-fixed w-100">
             <nav className="bg-dark bg-opacity-75 navbar navbar-dark navbar-expand-lg p-0">
                 <div className="container">
                     <Link className="navbar-brand" to={"./#"}>
-                        <ImageSEO alt={"logo"} src={logo} sources={[]} style={{width: "184px", height: "54px"}}/>
+                        <ImageSEO alt={"logo"} src={logo} sources={[]} style={{ width: "184px", height: "54px" }} />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,8 +42,8 @@ function Header() {
                                     </li>
                                 </ul>
                             </div>
-                            <hr className={"my-0 text-light"}/>
-                            <div className={"d-flex justify-content-center"}>
+                            <hr className={"my-0 text-light"} />
+                            <div className={"d-flex justify-content-center mb-1"}>
                                 <ul className="align-items-center align-items-lg-start justify-content-lg-between mb-2 mb-lg-0 navbar-nav w-100">
                                     <li className="nav-item dropdown">
                                         <button className="nav-link active dropdown-toggle w-100" id="navbarDropdown"

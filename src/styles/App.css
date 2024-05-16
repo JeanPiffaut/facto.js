@@ -3,6 +3,8 @@
 :root {
     --bs-body-font-family: Montserrat, serif;
     --font-size: 0.813rem;
+    --topbar-height: 50px;
+    --header-height: 80px;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -12,6 +14,31 @@
 .navbar-nav .nav-link.active, .navbar-nav .nav-link {
     font-size: var(--font-size);
 }
+
+#topbar {
+    position: sticky;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+    height: var(--topbar-height);
+}
+
+#topbar.hide, #facto_header.move-up {
+    transform: translateY(calc(var(--topbar-height) * -1));
+}
+
+#topbar.show, #facto_header.move-down {
+    transform: translateY(0);
+}
+
+#facto_header {
+    position: sticky;
+    top: var(--topbar-height);
+    width: 100%;
+    height: var(--header-height);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
 
 /* Para tamaños de pantalla menores a 992px (large) */
 @media (max-width: 992px) {
