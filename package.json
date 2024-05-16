@@ -1,0 +1,49 @@
+{
+    "name": "project-template",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^6.4.2",
+        "@testing-library/react": "^15.0.5",
+        "@testing-library/user-event": "^14.5.2",
+        "env-cmd": "^10.1.0",
+        "i18next": "^23.11.3",
+        "i18next-browser-languagedetector": "^7.2.1",
+        "prop-types": "^15.8.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-helmet-async": "^2.0.5",
+        "react-i18next": "^14.1.1",
+        "react-router-dom": "^6.23.0",
+        "react-scripts": "^5.0.1",
+        "sitemaps": "^2.0.5",
+        "web-vitals": "^3.5.2"
+    },
+    "scripts": {
+        "start": "env-cmd -f .env.development react-scripts start",
+        "build": "env-cmd -f .env.development react-scripts build",
+        "start:prod": "env-cmd -f .env.production react-scripts start",
+        "build:prod": "env-cmd -f .env.production react-scripts build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    }
+}
