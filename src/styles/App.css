@@ -2,4 +2,24 @@
 
 :root {
     --bs-body-font-family: Montserrat, serif;
+    --font-size: 0.813rem;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    width: max-content;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link {
+    font-size: var(--font-size);
+}
+
+/* Para tamaños de pantalla menores a 992px (large) */
+@media (max-width: 992px) {
+    .dropdown {
+        width: 100%;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        width: auto;
+    }
 }
