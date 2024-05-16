@@ -1,8 +1,5 @@
 {
-  "app_title": "Plantilla de proyecto",
-  "app_description": "Plantilla para proyectos con diferentes funciones base.",
-  "edit_save_1": "Edita ",
-  "edit_save_2": " y guarda para recargar.",
-  "learn_react": "Aprende React",
-  "change_language": "Cambiar de idioma"
+  "app_title": "FACTO® - Sistema de ventas y administración gratuito",
+  "app_description": "Sistema de ventas y administración gratuito de Chile | FACTO emite facturas electrónicas gratis y sin limites",
+  "app_keyword": "sistema de ventas, administracion, facturacion, emitir documentos tributarios, facturas, factura electronica, boleta, inventario y bodega, pago en línea, vende mas rápido, automatiza tus ventas, cotizaciones, caja, cobranza"
 }
