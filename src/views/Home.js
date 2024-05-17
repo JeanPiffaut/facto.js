@@ -11,10 +11,16 @@ import banner_bag from "../assets/home/bag.webp";
 import banner_pc_phone from "../assets/home/pc-phone.webp";
 import people_use from "../assets/home/people-use.webp";
 import woocommerce from "../assets/home/woocommerce-img-home.png";
-import jumpseller from "../assets/home/jumpseller-logo-home.webp";
+import jump_seller from "../assets/home/jumpseller-logo-home.webp";
 import services from "../assets/home/servicios-integrados.png";
 import service_api from "../assets/home/servicioapi.png";
 import pago_en_linea from "../assets/home/pago-en-linea.webp";
+import home_document from "../assets/home/document.webp";
+import home_document_money from "../assets/home/document-money.webp";
+import cash_machine from "../assets/home/cash-machine.webp";
+import boxes from "../assets/home/boxes.webp";
+import people_arrow from "../assets/home/people-arrow.webp";
+import chain_money from "../assets/home/chain-money.webp";
 
 function Home() {
     return (
@@ -122,25 +128,22 @@ function Home() {
                         mensuales</b>
                     </h2>
                     <div className="row">
-                        <div className="col-12 col-lg-6 text-end">
+                        <div className="col-12 col-lg-6 text-center mb-5 mb-lg-0">
                             <ImageSEO defaultSrc={people_use} placeholderSrc={people_use} sources={[]}
                                       alt={"Diseño completo de funcionalidades para PYMEs y emprendedores"}
-                                      width={"100%"} height={"auto"}/>
+                                      width={"auto"} height={"auto"}/>
                         </div>
-                        <div className="align-items-center col-12 col-lg-6 d-flex">
+                        <div className="align-items-center col-12 col-lg-6 d-flex text-center">
                             <div>
                                 <h3 className={"h2 fw-semibold"}>Incrementa <span
                                     className="text-success">tus ventas</span>
                                 </h3>
-                                <div className="d-flex">
+                                <div className="d-flex justify-content-center">
                                     <div className="border-1 border-top pt-2" style={{width: "280px"}}></div>
                                 </div>
-                                <p className={"h4 fw-semibold"}>Con un completo sistema de <br/>facturación
-                                    en
-                                    tu tienda
-                                    física <br/>y online.</p>
-                                <p className={"fs-7"}>Si estás recién formalizando tu negocio o necesitas
-                                    más orden y
+                                <p className={"h4 fw-semibold"}>Con un completo sistema de facturación en tu tienda
+                                    física y online.</p>
+                                <p className={"fs-7"}>Si estás recién formalizando tu negocio o necesitas más orden y
                                     gestión administrativa para tu empresa ¡FACTO es para ti!</p>
                                 <div className={""}>
                                     <Link className="btn btn-success" to={"./registrarse"}>
@@ -160,32 +163,35 @@ function Home() {
                             <p className="h4 fw-semibold">Conecta tu página web con los <br/>principales E-commerce de
                                 Chile <br/></p>
                         </div>
-                        <div
-                            className="align-items-center d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between py-5">
-                            <Link
-                                className="align-items-center container-cicle-int d-flex justify-content-center"
-                                to={"./producto/integracion-facto-woocommerce/"}>
-                                <ImageSEO defaultSrc={woocommerce} placeholderSrc={woocommerce} sources={[]}
-                                          alt={"Woocommerce"} height={"auto"} width={"140"}/>
-                            </Link>
-                            <Link
-                                className="align-items-center container-cicle-int d-flex justify-content-center"
-                                to={"./producto/integracion-facto-jumpseller/"}>
-                                <ImageSEO defaultSrc={jumpseller} placeholderSrc={jumpseller} sources={[]}
-                                          alt={"Jumpseller"} height={"auto"} width={"140"}/>
-                            </Link>
-                            <Link
-                                className="align-items-center container-cicle-int d-flex justify-content-center"
-                                to={"./producto/integracion-facto-api/"}>
-                                <ImageSEO defaultSrc={services} placeholderSrc={services} sources={[]}
-                                          alt={"Servicios Integrados"} height={"auto"} width={"155"}/>
-                            </Link>
-                            <Link
-                                className="align-items-center container-cicle-int d-flex justify-content-center"
-                                to={"./complementos/servicios-integrados/"}>
-                                <ImageSEO defaultSrc={service_api} placeholderSrc={service_api} sources={[]}
-                                          alt={"Servicios API"} height={"auto"} width={"109"}/>
-                            </Link>
+                        <div className="row py-5">
+                            <div className="col-6 col-lg-3 d-flex justify-content-center">
+                                <Link className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
+                                      to={"./producto/integracion-facto-woocommerce/"}>
+                                    <ImageSEO defaultSrc={woocommerce} placeholderSrc={woocommerce} sources={[]}
+                                              alt={"Woocommerce"} height={"auto"} width={"140"}/>
+                                </Link>
+                            </div>
+                            <div className="col-6 col-lg-3 d-flex justify-content-center">
+                                <Link className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
+                                      to={"./producto/integracion-facto-jumpseller/"}>
+                                    <ImageSEO defaultSrc={jump_seller} placeholderSrc={jump_seller} sources={[]}
+                                              alt={"Jumpseller"} height={"auto"} width={"140"}/>
+                                </Link>
+                            </div>
+                            <div className="col-6 col-lg-3 d-flex justify-content-center">
+                                <Link className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
+                                      to={"./producto/integracion-facto-api/"}>
+                                    <ImageSEO defaultSrc={services} placeholderSrc={services} sources={[]}
+                                              alt={"Servicios Integrados"} height={"auto"} width={"155"}/>
+                                </Link>
+                            </div>
+                            <div className="col-6 col-lg-3 d-flex justify-content-center">
+                                <Link className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
+                                      to={"./complementos/servicios-integrados/"}>
+                                    <ImageSEO defaultSrc={service_api} placeholderSrc={service_api} sources={[]}
+                                              alt={"Servicios API"} height={"auto"} width={"109"}/>
+                                </Link>
+                            </div>
                         </div>
                         <div className="d-flex justify-content-center justify-content-lg-evenly align-items-center">
                             <p className="txt-contents p-2 fs-7 m-0" style={{maxWidth: "372px"}}>Tus ventas online están
@@ -201,20 +207,20 @@ function Home() {
             </section>
             <section className={"mb-5 footer-body"}>
                 <div className="container align-items-center d-flex">
-                    <div className="row">
-                        <div className="col-12 col-lg-6">
-                            <div className="text-center text-lg-start">
+                    <div className="row py-5">
+                        <div className="align-items-center col-12 col-lg-6 d-flex mb-5 mb-lg-0">
+                            <div className="text-center text-lg-end">
                                 <div className="d-flex justify-content-center justify-content-lg-end">
                                     <div
                                         className="border border-white rounded-4 d-flex justify-content-center align-items-center mb-2 p-1">
                                         <p className="m-0 text-white">¡Recomendado!</p>
                                     </div>
                                 </div>
-                                <h2 className="text-light text-end">Pago en línea</h2>
-                                <div className="d-flex justify-content-end">
+                                <h2 className="text-light">Pago en línea</h2>
+                                <div className="d-flex justify-content-lg-end justify-content-center">
                                     <div className="border-1 border-top pt-2" style={{width: "280px"}}></div>
                                 </div>
-                                <div className={"text-end"}>
+                                <div className={""}>
                                     <p className="h3 text-light">La forma más fácil y rápida <br/>de aumentar tus
                                         ingresos</p>
                                     <p className="text-light">Desde ahora tus cotizaciones y facturas vienen incluidas
@@ -230,6 +236,186 @@ function Home() {
                                 {srcSet: pago_en_linea, type: "image/webp", media: "(min-width: 320px)"},
                                 {srcSet: pago_en_linea, type: "image/webp", media: "(min-width: 450px)"}
                             ]}/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className={"mb-5"}>
+                <div className="container">
+                    <div className="text-center">
+                        <h2 className={"fw-semibold"}>Funcionalidades <span className="text-success">claves</span></h2>
+                        <div className="d-flex justify-content-center">
+                            <div className="border-1 border-top pt-2" style={{width: "280px"}}></div>
+                        </div>
+                        <p className="h3 fw-semibold">Para hacer crecer tu negocio</p>
+                    </div>
+                    <div className="row d-none d-lg-flex">
+                        <div className="col-12 col-lg-4 pt-5">
+                            <div className="card bg-light shadow border-0">
+                                <div className="card-body text-center p-5">
+                                    <ImageSEO defaultSrc={home_document} placeholderSrc={home_document} sources={[]}
+                                              alt={"Facturación"} width={"auto"} height={"60"}/>
+                                    <p className="h4 fw-semibold mt-2">Facturación</p>
+                                    <p className={"fs-7 m-0"}>Emite todos tus DTE desde facturas a hasta boletas
+                                        electrónicas, guías de despacho y mucho más.<br/>{'\u00A0'}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-4 pt-5">
+                            <div className="card bg-light shadow border-0">
+                                <div className="card-body text-center p-5">
+                                    <ImageSEO defaultSrc={home_document_money} placeholderSrc={home_document_money}
+                                              sources={[]} alt={"Cotizaciones"} width={"auto"} height={"60"}/>
+                                    <p className="h4 fw-semibold mt-2">Cotizaciones</p>
+                                    <p className={"fs-7 m-0"}>Genera y envía tus cotizaciones a tus clientes ,valores y
+                                        condiciones personalizadas. Agrega productos de manera rápida y fácil.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-4 pt-5">
+                            <div className="card bg-light shadow border-0">
+                                <div className="card-body text-center p-5">
+                                    <ImageSEO defaultSrc={cash_machine} placeholderSrc={cash_machine} sources={[]}
+                                              alt={"Caja y Cobranza"} width={"auto"} height={"60"}/>
+                                    <p className="h4 fw-semibold mt-2">Caja y Cobranza</p>
+                                    <p className={"fs-7 m-0"}>Maneja tu caja, apertura, permisos de usuarios y mucho más
+                                        ¿Te deben? Activa cobranza automatizada con recordatorio a tus clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-4 pt-5">
+                            <div className="card bg-light shadow border-0">
+                                <div className="card-body text-center p-5">
+                                    <ImageSEO defaultSrc={boxes} placeholderSrc={boxes} sources={[]}
+                                              alt={"Inventario y Bodega"} width={"auto"} height={"60"}/>
+                                    <p className="h4 fw-semibold mt-2">Inventario y Bodega<br/>{'\u00A0'}</p>
+                                    <p className={"fs-7 m-0"}>Controla tu stock, identifica ingresos y egresos de
+                                        productos, define costos, precios de venta y bodegas o ubicaciones. Todos
+                                        integrados en un solo sistema.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-4 pt-5">
+                            <div className="card bg-light shadow border-0">
+                                <div className="card-body text-center p-5">
+                                    <ImageSEO defaultSrc={people_arrow} placeholderSrc={people_arrow} sources={[]}
+                                              alt={"Clientes y Proveedores"} width={"auto"} height={"60"}/>
+                                    <p className="h4 fw-semibold mt-2">Clientes y Proveedores</p>
+                                    <p className={"fs-7 m-0"}>Organiza tus clientes y proveedores en un solo lugar:
+                                        datos de contacto, detalles de facturación, facturación, información de cuenta
+                                        corriente y documentos impagos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-4 pt-5">
+                            <div className="card bg-light shadow border-0">
+                                <div className="card-body text-center p-5">
+                                    <ImageSEO defaultSrc={chain_money} placeholderSrc={chain_money} sources={[]}
+                                              alt={"Pago en Línea"} width={"auto"} height={"60"}/>
+                                    <p className="h4 fw-semibold mt-2">Pago en Línea<br/>{'\u00A0'}</p>
+                                    <p className={"fs-7 m-0"}>Cobra con tu link o QR, compártelo dónde quieras y ofrece
+                                        medios de pago como tarjeta de crédito, debito o transferencia. Integrado en
+                                        facturas y cotizaciones.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row d-lg-none">
+                        <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-item active">
+                                <div className="col-12 col-lg-4 pt-5">
+                                    <div className="card bg-light shadow border-0">
+                                        <div className="card-body text-center p-5">
+                                            <ImageSEO defaultSrc={home_document} placeholderSrc={home_document}
+                                                      sources={[]}
+                                                      alt={"Facturación"} width={"auto"} height={"60"}/>
+                                            <p className="h4 fw-semibold mt-2">Facturación</p>
+                                            <p className={"fs-7 m-0"}>Emite todos tus DTE desde facturas a hasta boletas
+                                                electrónicas, guías de despacho y mucho más.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <div className="col-12 col-lg-4 pt-5">
+                                    <div className="card bg-light shadow border-0">
+                                        <div className="card-body text-center p-5">
+                                            <ImageSEO defaultSrc={home_document_money}
+                                                      placeholderSrc={home_document_money}
+                                                      sources={[]} alt={"Cotizaciones"} width={"auto"} height={"60"}/>
+                                            <p className="h4 fw-semibold mt-2">Cotizaciones</p>
+                                            <p className={"fs-7 m-0"}>Genera y envía tus cotizaciones a tus clientes
+                                                ,valores y
+                                                condiciones personalizadas. Agrega productos de manera rápida y
+                                                fácil.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <div className="col-12 col-lg-4 pt-5">
+                                    <div className="card bg-light shadow border-0">
+                                        <div className="card-body text-center p-5">
+                                            <ImageSEO defaultSrc={cash_machine} placeholderSrc={cash_machine}
+                                                      sources={[]}
+                                                      alt={"Caja y Cobranza"} width={"auto"} height={"60"}/>
+                                            <p className="h4 fw-semibold mt-2">Caja y Cobranza</p>
+                                            <p className={"fs-7 m-0"}>Maneja tu caja, apertura, permisos de usuarios y
+                                                mucho más
+                                                ¿Te deben? Activa cobranza automatizada con recordatorio a tus
+                                                clientes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <div className="col-12 col-lg-4 pt-5">
+                                    <div className="card bg-light shadow border-0">
+                                        <div className="card-body text-center p-5">
+                                            <ImageSEO defaultSrc={boxes} placeholderSrc={boxes} sources={[]}
+                                                      alt={"Inventario y Bodega"} width={"auto"} height={"60"}/>
+                                            <p className="h4 fw-semibold mt-2">Inventario y Bodega</p>
+                                            <p className={"fs-7 m-0"}>Controla tu stock, identifica ingresos y egresos
+                                                de productos, define costos, precios de venta y bodegas o ubicaciones.
+                                                Todos integrados en un solo sistema.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <div className="col-12 col-lg-4 pt-5">
+                                    <div className="card bg-light shadow border-0">
+                                        <div className="card-body text-center p-5">
+                                            <ImageSEO defaultSrc={people_arrow} placeholderSrc={people_arrow}
+                                                      sources={[]}
+                                                      alt={"Clientes y Proveedores"} width={"auto"} height={"60"}/>
+                                            <p className="h4 fw-semibold mt-2">Clientes y Proveedores</p>
+                                            <p className={"fs-7 m-0"}>Organiza tus clientes y proveedores en un solo
+                                                lugar: datos de contacto, detalles de facturación, facturación,
+                                                información de cuenta corriente y documentos impagos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <div className="col-12 col-lg-4 pt-5">
+                                    <div className="card bg-light shadow border-0">
+                                        <div className="card-body text-center p-5">
+                                            <ImageSEO defaultSrc={chain_money} placeholderSrc={chain_money} sources={[]}
+                                                      alt={"Pago en Línea"} width={"auto"} height={"60"}/>
+                                            <p className="h4 fw-semibold mt-2">Pago en Línea</p>
+                                            <p className={"fs-7 m-0"}>Cobra con tu link o QR, compártelo dónde quieras y
+                                                ofrece medios de pago como tarjeta de crédito, debito o transferencia.
+                                                Integrado en facturas y cotizaciones.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row pt-5 d-none d-lg-flex">
+                        <div className="col-12 text-center">
+                            <Link to={"./funcionalidades"} className={"btn btn-success"}>Ver funcionalidades</Link>
                         </div>
                     </div>
                 </div>

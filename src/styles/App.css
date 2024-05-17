@@ -5,6 +5,11 @@
     --font-size: 0.813rem;
     --topbar-height: 50px;
     --header-height: 80px;
+    --bs-body-bg: #fdfcff;
+}
+
+img, svg {
+    max-width: 100%;
 }
 
 .lazyload {
