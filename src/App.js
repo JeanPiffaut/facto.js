@@ -18,10 +18,12 @@ function App() {
             <BrowserRouter>
                 <TopBar/>
                 <Header/>
-                <Routes>
-                    <Route path={"/"} element={<Home/>}/>
-                    <Route/>
-                </Routes>
+                <main>
+                    <Routes>
+                        <Route path={"/"} element={<Home/>}/>
+                        <Route/>
+                    </Routes>
+                </main>
                 <Footer/>
             </BrowserRouter>
         </LoadingProvider>
