@@ -21,6 +21,17 @@ import cash_machine from "../assets/home/cash-machine.webp";
 import boxes from "../assets/home/boxes.webp";
 import people_arrow from "../assets/home/people-arrow.webp";
 import chain_money from "../assets/home/chain-money.webp";
+import chile_mass from "../assets/home/Logo-ChileMass.webp";
+import google_cloud from "../assets/home/logo-google-cloud.webp";
+import pymes_en_linea from "../assets/home/logo_pymes_en_linea_a_extend_gob.png";
+import et_pay from "../assets/home/etpay.webp";
+import oh_co_work from "../assets/home/ohco-work.webp";
+import incuba_tec from "../assets/home/logo-incubatec-color.webp";
+import logo_mer from "../assets/home/logo_mer.webp";
+import diario_fin from "../assets/home/diario-financiero.webp";
+import logo_sii from "../assets/home/sii.webp";
+import logo_corfo from "../assets/home/logo-corfo.webp";
+import logo_previred from "../assets/home/previred.webp";
 
 function Home() {
     return (
@@ -54,7 +65,7 @@ function Home() {
                                     <form name="formDemo-home" id="formDemo-home"
                                           action="https://conexion.facto.cl/envio_demo.php" method="post"
                                           onSubmit="return validateDemo()" data-hs-cf-bound="true">
-                                        <p className="h3 fw-semibold text-center text-light">Prueba nuestra <br/>DEMO en
+                                        <p className="h4 fw-semibold text-center text-light">Prueba nuestra <br/>DEMO en
                                             línea
                                         </p>
                                         <div className="form-floating mb-3">
@@ -97,7 +108,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className={"mb-5"}>
+            <section className={"pb-5"}>
                 <div className="container">
                     <div className="bg-light border-0 card shadow">
                         <div className="card-body py-5">
@@ -108,17 +119,17 @@ function Home() {
                                 <div className="col-12 col-lg-4 text-center">
                                     <ImageSEO defaultSrc={banner_pc_doc} placeholderSrc={banner_pc_doc} sources={[]}
                                               alt={"Aumenta tus ingresos"} height={"60"} width={"76"}/>
-                                    <p className={"h3 fw-semibold mt-2"}>Aumenta <br/>tus ingresos</p>
+                                    <p className={"h4 fw-semibold mt-2"}>Aumenta <br/>tus ingresos</p>
                                 </div>
                                 <div className="col-12 col-lg-4 text-center">
                                     <ImageSEO defaultSrc={banner_bag} placeholderSrc={banner_bag} sources={[]}
                                               alt={"Ahorra tiempo"} height={"60"} width={"76"}/>
-                                    <p className={"h3 fw-semibold mt-2"}>Ahorra <br/>tiempo</p>
+                                    <p className={"h4 fw-semibold mt-2"}>Ahorra <br/>tiempo</p>
                                 </div>
                                 <div className="col-12 col-lg-4 text-center">
                                     <ImageSEO defaultSrc={banner_pc_phone} placeholderSrc={banner_pc_phone} sources={[]}
                                               alt={"Úsalo en cualquier dispositivo"} height={"60"} width={"76"}/>
-                                    <p className={"h3 fw-semibold mt-2"}>Úsalo en <br/>cualquier dispositivo</p>
+                                    <p className={"h4 fw-semibold mt-2"}>Úsalo en <br/>cualquier dispositivo</p>
                                 </div>
                             </div>
                         </div>
@@ -165,29 +176,33 @@ function Home() {
                         </div>
                         <div className="row py-5">
                             <div className="col-6 col-lg-3 d-flex justify-content-center">
-                                <Link className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
-                                      to={"./producto/integracion-facto-woocommerce/"}>
+                                <Link
+                                    className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
+                                    to={"./producto/integracion-facto-woocommerce/"}>
                                     <ImageSEO defaultSrc={woocommerce} placeholderSrc={woocommerce} sources={[]}
                                               alt={"Woocommerce"} height={"auto"} width={"140"}/>
                                 </Link>
                             </div>
                             <div className="col-6 col-lg-3 d-flex justify-content-center">
-                                <Link className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
-                                      to={"./producto/integracion-facto-jumpseller/"}>
+                                <Link
+                                    className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
+                                    to={"./producto/integracion-facto-jumpseller/"}>
                                     <ImageSEO defaultSrc={jump_seller} placeholderSrc={jump_seller} sources={[]}
                                               alt={"Jumpseller"} height={"auto"} width={"140"}/>
                                 </Link>
                             </div>
                             <div className="col-6 col-lg-3 d-flex justify-content-center">
-                                <Link className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
-                                      to={"./producto/integracion-facto-api/"}>
+                                <Link
+                                    className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
+                                    to={"./producto/integracion-facto-api/"}>
                                     <ImageSEO defaultSrc={services} placeholderSrc={services} sources={[]}
                                               alt={"Servicios Integrados"} height={"auto"} width={"155"}/>
                                 </Link>
                             </div>
                             <div className="col-6 col-lg-3 d-flex justify-content-center">
-                                <Link className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
-                                      to={"./complementos/servicios-integrados/"}>
+                                <Link
+                                    className="align-items-center container-cicle-int d-flex justify-content-center mb-5 mb-lg-0"
+                                    to={"./complementos/servicios-integrados/"}>
                                     <ImageSEO defaultSrc={service_api} placeholderSrc={service_api} sources={[]}
                                               alt={"Servicios API"} height={"auto"} width={"109"}/>
                                 </Link>
@@ -205,9 +220,9 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className={"mb-5 footer-body"}>
+            <section className={"py-5 footer-body"}>
                 <div className="container align-items-center d-flex">
-                    <div className="row py-5">
+                    <div className="row">
                         <div className="align-items-center col-12 col-lg-6 d-flex mb-5 mb-lg-0">
                             <div className="text-center text-lg-end">
                                 <div className="d-flex justify-content-center justify-content-lg-end">
@@ -216,17 +231,18 @@ function Home() {
                                         <p className="m-0 text-white">¡Recomendado!</p>
                                     </div>
                                 </div>
-                                <h2 className="text-light">Pago en línea</h2>
+                                <h2 className="text-light fw-semibold">Pago en línea</h2>
                                 <div className="d-flex justify-content-lg-end justify-content-center">
                                     <div className="border-1 border-top pt-2" style={{width: "280px"}}></div>
                                 </div>
                                 <div className={""}>
-                                    <p className="h3 text-light">La forma más fácil y rápida <br/>de aumentar tus
+                                    <p className="h3 text-light fw-semibold">La forma más fácil y rápida <br/>de
+                                        aumentar tus
                                         ingresos</p>
                                     <p className="text-light">Desde ahora tus cotizaciones y facturas vienen incluidas
                                         con un link de pago directo, el cual permitirá a tus clientes realizar el pago
                                         de los documentos al instante.</p>
-                                    <Link className="btn btn-success" to={"./"}>¡Más información!</Link>
+                                    <Link className="btn btn-success" to={"./pago-en-linea"}>¡Más información!</Link>
                                 </div>
                             </div>
                         </div>
@@ -240,14 +256,14 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className={"mb-5"}>
+            <section className={"py-5 bg-light"}>
                 <div className="container">
                     <div className="text-center">
                         <h2 className={"fw-semibold"}>Funcionalidades <span className="text-success">claves</span></h2>
                         <div className="d-flex justify-content-center">
                             <div className="border-1 border-top pt-2" style={{width: "280px"}}></div>
                         </div>
-                        <p className="h3 fw-semibold">Para hacer crecer tu negocio</p>
+                        <p className="h4 fw-semibold">Para hacer crecer tu negocio</p>
                     </div>
                     <div className="row d-none d-lg-flex">
                         <div className="col-12 col-lg-4 pt-5">
@@ -416,6 +432,119 @@ function Home() {
                     <div className="row pt-5 d-none d-lg-flex">
                         <div className="col-12 text-center">
                             <Link to={"./funcionalidades"} className={"btn btn-success"}>Ver funcionalidades</Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className={"py-5"}>
+                <div className="container">
+                    <div className="text-center">
+                        <h2 className={"fw-semibold"}>Nuestros <span className="text-success">Partners</span></h2>
+                        <div className="d-flex justify-content-center">
+                            <div className="border-1 border-top pt-2" style={{width: "280px"}}></div>
+                        </div>
+                        <p className="h4 fw-semibold">Ellos confían y difunden <br/> nuestros servicios</p>
+                    </div>
+                    <div className="row">
+                        <div className="col-12 col-sm-6 col-lg-4 mt-3 mt-lg-5">
+                            <Link className="bg-body-secondary border-0 card h-100" to={"https://www.chilemass.org/"}
+                                  target={"_blank"}>
+                                <div className="card-body d-flex justify-content-center align-items-center">
+                                    <ImageSEO defaultSrc={chile_mass} placeholderSrc={chile_mass} alt={"ChileMass"}
+                                              width={"auto"} height={"67"} sources={[]}/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-12 col-sm-6 col-lg-4 mt-3 mt-lg-5">
+                            <Link className="bg-body-secondary border-0 card h-100" to={"https://cloud.google.com/"}
+                                  target={"_blank"}>
+                                <div className="card-body d-flex justify-content-center align-items-center">
+                                    <ImageSEO defaultSrc={google_cloud} placeholderSrc={google_cloud}
+                                              alt={"google_cloud"} width={"auto"} height={"39"} sources={[]}/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-12 col-sm-6 col-lg-4 mt-3 mt-lg-5">
+                            <Link className="bg-body-secondary border-0 card h-100"
+                                  to={"https://pymesenlinea.cl/alianza/full-digitalizacion-para-tu-negocio-automatiza-todo-tu-proceso-de-venta-y-facturacion-con-30-de-descuento-exclusivo"}
+                                  target={"_blank"}>
+                                <div className="card-body d-flex justify-content-center align-items-center">
+                                    <ImageSEO defaultSrc={pymes_en_linea} placeholderSrc={pymes_en_linea}
+                                              alt={"pymes_en_linea"} width={"auto"} height={"67"} sources={[]}/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-12 col-sm-6 col-lg-4 mt-3 mt-lg-5">
+                            <Link className="bg-body-secondary border-0 card h-100" to={"https://www.etpay.com/"}
+                                  target={"_blank"}>
+                                <div className="card-body d-flex justify-content-center align-items-center">
+                                    <ImageSEO defaultSrc={et_pay} placeholderSrc={et_pay} alt={"et_pay"} width={"auto"}
+                                              height={"46"} sources={[]}/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-12 col-sm-6 col-lg-4 mt-3 mt-lg-5">
+                            <Link className="bg-body-secondary border-0 card h-100" to={"https://ohco.work/perks"}
+                                  target={"_blank"}>
+                                <div className="card-body d-flex justify-content-center align-items-center">
+                                    <ImageSEO defaultSrc={oh_co_work} placeholderSrc={oh_co_work} alt={"oh_co_work"}
+                                              width={"auto"} height={"52"} sources={[]}/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-12 col-sm-6 col-lg-4 mt-3 mt-lg-5">
+                            <Link className="bg-body-secondary border-0 card h-100" to={"https://incubatec.cl/"}
+                                  target={"_blank"}>
+                                <div className="card-body d-flex justify-content-center align-items-center">
+                                    <ImageSEO defaultSrc={incuba_tec} placeholderSrc={incuba_tec} alt={"incuba_tec"}
+                                              width={"auto"} height={"64"} sources={[]}/>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                    <hr className={"my-5"}/>
+                    <div className="row">
+                        <div className="col-12 col-sm-6 mb-3 mb-lg-0">
+                            <Link className="bg-body-secondary border-0 card h-100" to={"./facto-en-la-prensa"}>
+                                <div className="card-body d-flex justify-content-center align-items-center">
+                                    <ImageSEO defaultSrc={logo_mer} placeholderSrc={logo_mer} alt={"logo_mer"}
+                                              width={"auto"} height={"16"} sources={[]}/>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="col-12 col-sm-6">
+                            <Link className="bg-body-secondary border-0 card h-100"
+                                  to={"https://www.df.cl/df-lab/innovacion-y-startups/como-una-startup-chilena-asesoro-a-la-reserva-federal-para-crear-sistema#:~:text=Facto%2C%20una%20startup%20chilena%20fundada,estandarizar%20el%20sistema%20de%20ese"}
+                                  target={"_blank"}>
+                                <div className="card-body d-flex justify-content-center align-items-center">
+                                    <ImageSEO defaultSrc={diario_fin} placeholderSrc={diario_fin} alt={"diario_fin"}
+                                              width={"auto"} height={"16"} sources={[]}/>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="text-center my-5">
+                        <h2 className="fw-semibold">Ellos nos validan y apoyan</h2>
+                    </div>
+                    <div className="row">
+                        <div className="align-items-center col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0">
+                            <Link to={"https://www.sii.cl/servicios_online/1039-emp_prov_fe-1184.html"} target={"_blank"}>
+                                <ImageSEO defaultSrc={logo_sii} placeholderSrc={logo_sii} alt={"logo_sii"}
+                                          width={"150"} height={"auto"} sources={[]}/>
+                            </Link>
+                        </div>
+                        <div className="align-items-center col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0">
+                            <Link to={"https://corfo.cl/sites/cpp/homecorfo"} target={"_blank"}>
+                                <ImageSEO defaultSrc={logo_corfo} placeholderSrc={logo_corfo} alt={"logo_corfo"}
+                                          width={"150"} height={"auto"} sources={[]}/>
+                            </Link>
+                        </div>
+                        <div className="align-items-center col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0">
+                            <Link to={"https://www.previred.com/web/previred/softwares-gratuito"} target={"_blank"}>
+                                <ImageSEO defaultSrc={logo_previred} placeholderSrc={logo_previred}
+                                          alt={"logo_previred"}
+                                          width={"200"} height={"auto"} sources={[]}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
