@@ -27,7 +27,7 @@ const TopBar = () => {
 
     return (
         <div id="topbar" className={`container-fluid bg-black ${visible ? 'show' : 'hide'}`}>
-            <p className="text-center mb-0 py-3 text-light" style={{ fontSize: 'var(--font-size)' }}>
+            <p className="text-center mb-0 py-3 text-light fs-7">
                 ⬇️ 💲 ¿Bajas ventas? Aumenta tus ingresos con Pago en Línea FACTO{' '}
                 <Link
                     className="text-white text-decoration-underline"

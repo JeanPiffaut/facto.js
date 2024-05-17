@@ -20,10 +20,6 @@
     width: max-content;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link {
-    font-size: var(--font-size);
-}
-
 #topbar {
     position: sticky;
     top: 0;

@@ -23,7 +23,7 @@ function Header() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className={"collapse navbar-collapse"} id="navbarSupportedContent">
-                        <div className={"w-100"}>
+                        <div className={"w-100 fs-7"}>
                             <div className={"d-flex justify-content-center"}>
                                 <ul className="align-items-center align-items-lg-start mb-2 mb-lg-0 me-lg-0 ms-lg-auto navbar-nav">
                                     <li className="nav-item ms-0 ms-lg-2">
