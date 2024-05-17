@@ -7,6 +7,16 @@
     --header-height: 80px;
 }
 
+.lazyload {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazyloaded {
+    opacity: 1;
+}
+
+
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     width: max-content;
 }
@@ -37,6 +47,14 @@
     height: var(--header-height);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
+}
+
+.banner-bg {
+    margin-top: calc(var(--header-height) * -1);
+}
+
+.banner-content {
+    margin-top: var(--header-height);
 }
 
 

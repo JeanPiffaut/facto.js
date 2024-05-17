@@ -9,7 +9,7 @@ function Header() {
             <nav className="bg-dark bg-opacity-75 navbar navbar-dark navbar-expand-lg p-0">
                 <div className="container">
                     <Link className="navbar-brand" to={"./#"}>
-                        <ImageSEO alt={"logo"} src={logo} sources={[]} style={{ width: "184px", height: "54px" }} />
+                        <ImageSEO alt={"logo"} placeholderSrc={logo} defaultSrc={logo} sources={[]} height={"54px"} width={"184px"}/>
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

@@ -5,6 +5,9 @@ import './components/i18n';
 import reportWebVitals from './config/reportWebVitals';
 import App from "./App";
 import {HelmetProvider} from "react-helmet-async";
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

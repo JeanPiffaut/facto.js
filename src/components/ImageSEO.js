@@ -1,50 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/**
- * Componente ImageSEO
- * @param {object} sources - Objeto que contiene arrays de {srcSet, type} para diferentes formatos de imagen.
- * @param {string} src - La URL de la imagen por defecto (fallback).
- * @param {string} alt - Texto alternativo para la imagen.
- * @param {string} title - Título de la imagen (opcional).
- * @param {string} className - Clases CSS adicionales (opcional).
- * @param {object} style - Estilos en línea adicionales (opcional).
- * @param {string} loading - Define si la imagen debe cargar de forma "lazy" o "eager" (opcional).
- */
-const ImageSEO = ({ sources, src, alt, title, className, style, loading = 'lazy' }) => {
+const ImageSEO = ({ alt, defaultSrc, sources, width, height, placeholderSrc }) => {
     return (
         <picture>
-            {sources.map(({ srcSet, type }) => (
-                <source key={type} srcSet={srcSet} type={type} />
+            {sources.map((source, index) => (
+                <source key={index} srcSet={source.srcSet} type={source.type} media={source.media} />
             ))}
             <img
-                src={src}
+                src={placeholderSrc}
+                data-src={defaultSrc}
                 alt={alt}
-                title={title || alt}
-                className={className}
-                style={style}
-                loading={loading}
-                onError={(e) => {
-                    e.target.src = 'path_to_default_image.jpg'; // Ruta a una imagen de reserva
-                }}
+                loading="lazy"
+                width={width}
+                height={height}
+                className="lazyload"
             />
         </picture>
     );
 };
 
 ImageSEO.propTypes = {
+    alt: PropTypes.string.isRequired,
+    defaultSrc: PropTypes.string.isRequired,
     sources: PropTypes.arrayOf(
         PropTypes.shape({
             srcSet: PropTypes.string.isRequired,
-            type: PropTypes.string.isRequired
+            type: PropTypes.string.isRequired,
+            media: PropTypes.string.isRequired,
         })
     ).isRequired,
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    title: PropTypes.string,
-    className: PropTypes.string,
-    style: PropTypes.object,
-    loading: PropTypes.oneOf(['lazy', 'eager'])
+    width: PropTypes.string.isRequired,
+    height: PropTypes.string.isRequired,
+    placeholderSrc: PropTypes.string.isRequired,
 };
 
 export default ImageSEO;
