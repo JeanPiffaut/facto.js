@@ -88,29 +88,29 @@ function Home() {
                     <div className="bg-light border-0 card shadow">
                         <div className="card-body py-5">
                             <h2 className="text-center fw-semibold">Un sistema de ventas, administración y
-                                facturación<br/> que permite <b>gestionar tu negocio</b>
+                                facturación<br/> que permite <b className={"text-success"}>gestionar tu negocio</b>
                             </h2>
                             <div className="row pt-5">
                                 <div className="col-12 col-lg-4 text-center">
                                     <ImageSEO defaultSrc={banner_pc_doc} placeholderSrc={banner_pc_doc} sources={[]}
                                               alt={"Aumenta tus ingresos"} height={"60"} width={"76"}/>
-                                    <h3 className={"fw-semibold"}>Aumenta <br/>tus ingresos</h3>
+                                    <h3 className={"fw-semibold mt-2"}>Aumenta <br/>tus ingresos</h3>
                                 </div>
                                 <div className="col-12 col-lg-4 text-center">
                                     <ImageSEO defaultSrc={banner_bag} placeholderSrc={banner_bag} sources={[]}
                                               alt={"Ahorra tiempo"} height={"60"} width={"76"}/>
-                                    <h3 className={"fw-semibold"}>Ahorra <br/>tiempo</h3>
+                                    <h3 className={"fw-semibold mt-2"}>Ahorra <br/>tiempo</h3>
                                 </div>
                                 <div className="col-12 col-lg-4 text-center">
                                     <ImageSEO defaultSrc={banner_pc_phone} placeholderSrc={banner_pc_phone} sources={[]}
                                               alt={"Úsalo en cualquier dispositivo"} height={"60"} width={"76"}/>
-                                    <h3 className={"fw-semibold"}>Úsalo en <br/>cualquier dispositivo</h3>
+                                    <h3 className={"fw-semibold mt-2"}>Úsalo en <br/>cualquier dispositivo</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <h2 className="text-center h1 fw-semibold mt-5">
-                        FACTO automatiza tu negocio <br/>y aumenta tus <b>ingresos mensuales</b>
+                        FACTO automatiza tu negocio <br/>y aumenta tus <b className={"text-success"}>ingresos mensuales</b>
                     </h2>
                 </div>
             </section>
