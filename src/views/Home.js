@@ -5,6 +5,9 @@ import banner_bg from "../assets/banner-pago-en-linea/background-des.webp";
 import banner_bg_sm from "../assets/banner-pago-en-linea/background-res.webp";
 import banner_img from "../assets/banner-pago-en-linea/txt-des.webp";
 import banner_img_sm from "../assets/banner-pago-en-linea/txt-res.webp";
+import banner_pc_doc from "../assets/home/pc-doc.webp";
+import banner_bag from "../assets/home/bag.webp";
+import banner_pc_phone from "../assets/home/pc-phone.webp";
 
 function Home() {
     return (
@@ -12,7 +15,7 @@ function Home() {
             <MetaTags title={"FACTO® - Sistema de ventas y administración gratuito"}
                       description={"Sistema de ventas y administración gratuito de Chile | FACTO emite facturas electrónicas gratis y sin limites"}
                       url={"/"}/>
-            <section style={{height: '2000px'}}>
+            <section>
                 <div className="banner-bg position-absolute z-n1 w-100">
                     <ImageSEO alt={"banner-bg"} style={{height: '800px', width: '100%'}}
                               sources={[
@@ -20,7 +23,7 @@ function Home() {
                                   {srcSet: banner_bg_sm, type: "image/webp", media: "(min-width: 320px)"}
                               ]} defaultSrc={banner_bg} height={"800"} placeholderSrc={banner_bg} width={"100%"}/>
                 </div>
-                <div className="banner-content container">
+                <div className="banner-content container" style={{height: "calc(800px - (283px))"}}>
                     <div className="row mt-4 d-inline-flex">
                         <div className="align-items-center col-12 col-lg-8 d-flex">
                             <ImageSEO alt={"banner-img"} sources={[
@@ -33,19 +36,18 @@ function Home() {
                                href="https://www.facto.cl/registrarse">
                                 Regístrate en FACTO
                             </a>
-                            <div className="card">
+                            <div className="card border-0">
                                 <div className="card-body">
                                     <form name="formDemo-home" id="formDemo-home"
                                           action="https://conexion.facto.cl/envio_demo.php" method="post"
                                           onSubmit="return validateDemo()" data-hs-cf-bound="true">
-                                        <h3 className="text-center text-light">Prueba nuestra <br/>DEMO en línea
+                                        <h3 className="fw-semibold text-center text-light">Prueba nuestra <br/>DEMO en línea
                                         </h3>
                                         <div className="form-floating mb-3">
                                             <input id="name" type="text" name="firstname"
                                                    className="form-control input-facto"
                                                    placeholder="Súper empresa LTDA." required=""/>
                                             <label className="control-label" htmlFor="firstname">Nombre</label>
-
                                         </div>
                                         <div className="form-floating mb-3">
                                             <input id="email" type="email" name="email"
@@ -71,12 +73,45 @@ function Home() {
                                     </form>
                                 </div>
                             </div>
-                            <a className="d-none d-lg-block mt-4 btn btn-secondary btn-lg"
-                               href="https://www.facto.cl/registrarse">
-                                Regístrate en FACTO
-                            </a>
+                            <div className={"d-flex justify-content-center"}>
+                                <a className="d-none d-lg-block mt-4 btn btn-secondary btn-lg"
+                                   href="https://www.facto.cl/registrarse">
+                                    Regístrate en FACTO
+                                </a>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className={"mb-5"}>
+                <div className="container">
+                    <div className="bg-light border-0 card shadow">
+                        <div className="card-body py-5">
+                            <h2 className="text-center fw-semibold">Un sistema de ventas, administración y
+                                facturación<br/> que permite <b>gestionar tu negocio</b>
+                            </h2>
+                            <div className="row pt-5">
+                                <div className="col-12 col-lg-4 text-center">
+                                    <ImageSEO defaultSrc={banner_pc_doc} placeholderSrc={banner_pc_doc} sources={[]}
+                                              alt={"Aumenta tus ingresos"} height={"60"} width={"76"}/>
+                                    <h3 className={"fw-semibold"}>Aumenta <br/>tus ingresos</h3>
+                                </div>
+                                <div className="col-12 col-lg-4 text-center">
+                                    <ImageSEO defaultSrc={banner_bag} placeholderSrc={banner_bag} sources={[]}
+                                              alt={"Ahorra tiempo"} height={"60"} width={"76"}/>
+                                    <h3 className={"fw-semibold"}>Ahorra <br/>tiempo</h3>
+                                </div>
+                                <div className="col-12 col-lg-4 text-center">
+                                    <ImageSEO defaultSrc={banner_pc_phone} placeholderSrc={banner_pc_phone} sources={[]}
+                                              alt={"Úsalo en cualquier dispositivo"} height={"60"} width={"76"}/>
+                                    <h3 className={"fw-semibold"}>Úsalo en <br/>cualquier dispositivo</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 className="text-center h1 fw-semibold mt-5">
+                        FACTO automatiza tu negocio <br/>y aumenta tus <b>ingresos mensuales</b>
+                    </h2>
                 </div>
             </section>
         </>

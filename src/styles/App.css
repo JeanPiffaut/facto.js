@@ -60,6 +60,21 @@
     --bs-card-bg: rgba(0,0,0,.3);
 }
 
+.footer-body {
+    background-color: #0077BE;
+}
+
+.footer-bottom {
+    background-color: #086BA5;
+}
+
+.fs-7 {
+    font-size: var(--font-size);
+}
+
+.fs-8 {
+    font-size: 0.625rem;
+}
 
 /* Para tamaños de pantalla menores a 992px (large) */
 @media (max-width: 992px) {

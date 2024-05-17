@@ -8,6 +8,7 @@ import {LoadingProvider} from "./components/LoadingScreen";
 import {useTranslation} from "react-i18next";
 import Header from "./views/header/Header";
 import TopBar from "./views/header/TopBar";
+import Footer from "./views/Footer";
 
 function App() {
     useTranslation();
@@ -21,6 +22,7 @@ function App() {
                     <Route path={"/"} element={<Home/>}/>
                     <Route/>
                 </Routes>
+                <Footer/>
             </BrowserRouter>
         </LoadingProvider>
     );
