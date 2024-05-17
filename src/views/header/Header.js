@@ -11,9 +11,15 @@ function Header() {
                     <Link className="navbar-brand" to={"./#"}>
                         <ImageSEO alt={"logo"} placeholderSrc={logo} defaultSrc={logo} sources={[]} height={"54px"} width={"184px"}/>
                     </Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className={"collapse navbar-collapse"} id="navbarSupportedContent">
@@ -46,9 +52,12 @@ function Header() {
                             <div className={"d-flex justify-content-center mb-1"}>
                                 <ul className="align-items-center align-items-lg-start justify-content-lg-between mb-2 mb-lg-0 navbar-nav w-100">
                                     <li className="nav-item dropdown">
-                                        <button className="nav-link active dropdown-toggle w-100" id="navbarDropdown"
-                                                role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button
+                                            className="nav-link active dropdown-toggle w-100"
+                                            id="navbarDropdown"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
                                             Funcionalidades
                                         </button>
                                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -127,9 +136,12 @@ function Header() {
                                         </Link>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <button className="nav-link active dropdown-toggle w-100" id="navbarDropdown"
-                                                role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button
+                                            className="nav-link active dropdown-toggle w-100"
+                                            id="navbarDropdown"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
                                             Conócenos
                                         </button>
                                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -154,9 +166,12 @@ function Header() {
                                         </ul>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <button className="nav-link active dropdown-toggle w-100" id="navbarDropdown"
-                                                role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button
+                                            className="nav-link active dropdown-toggle w-100"
+                                            id="navbarDropdown"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
                                             Ayuda
                                         </button>
                                         <ul className="dropdown-menu dropdown-menu-end"

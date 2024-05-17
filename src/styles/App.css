@@ -16,7 +16,6 @@
     opacity: 1;
 }
 
-
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     width: max-content;
 }
@@ -55,6 +54,10 @@
 
 .banner-content {
     margin-top: var(--header-height);
+}
+
+.card {
+    --bs-card-bg: rgba(0,0,0,.3);
 }
 
 
