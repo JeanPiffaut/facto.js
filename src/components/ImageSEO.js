@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ImageSEO = ({ alt, defaultSrc, sources, width, height, placeholderSrc, isCritic=false }) => {
+const ImageSEO = ({ alt, defaultSrc, sources, width, height, placeholderSrc, style, isCritic=false }) => {
     return (
         <picture>
             {sources.map((source, index) => (
@@ -15,6 +15,7 @@ const ImageSEO = ({ alt, defaultSrc, sources, width, height, placeholderSrc, isC
                 width={width}
                 height={height}
                 className={!isCritic ? "lazyload" : ""}
+                style={style}
             />
         </picture>
     );

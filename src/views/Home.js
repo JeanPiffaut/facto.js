@@ -31,8 +31,10 @@ const Home = memo(() => {
                 }
                 url={"/"}
             >
-                <link rel="preload" fetchPriority="high" as="image" href={banner_bg_min} type="image/webp"/>
-                <link rel="preload" fetchPriority="high" as="image" href={banner_img_sm_min} type="image/webp"/>
+                <link rel="preload" fetchPriority="auto" as="image" href={banner_bg_min} type="image/webp"/>
+                <link rel="preload" fetchPriority="auto" as="image" href={banner_img_sm_min} type="image/webp"/>
+                <link rel="preload" fetchPriority="high" as="image" href={banner_img_sm} type="image/webp"/>
+                <link rel="preload" fetchPriority="high" as="image" href={banner_bg} type="image/webp"/>
             </MetaTags>
             <BannerSection/>
             <DescriptionSection/>
@@ -118,10 +120,11 @@ const BannerSection = memo(() => (
                     {srcSet: banner_bg_sm, type: "image/webp", media: "(min-width: 320px)"},
                 ]}
                 defaultSrc={banner_bg}
-                height="800"
                 placeholderSrc={banner_bg_min}
-                width="100%"
+                width="1326"
+                height="781"
                 isCritic={true}
+                style={{width:"100%",height:"800",aspectRatio:"auto 1326/781"}}
             />
         </div>
         <div className="banner-content container">
