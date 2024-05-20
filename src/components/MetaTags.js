@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const MetaTags = ({ title, description, image, url }) => {
+const MetaTags = ({ title, description, image, url, children }) => {
     const metaProps = [
         { property: "og:title", content: title },
         { property: "twitter:title", content: title },
@@ -23,6 +23,7 @@ const MetaTags = ({ title, description, image, url }) => {
             {metaProps.map((meta, index) => (
                 <meta key={index} {...meta} />
             ))}
+            {children}
         </Helmet>
     );
 }

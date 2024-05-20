@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow: *
+Disallow:
 sitemap: https://nuevo-facto.web.app/sitemap.xml

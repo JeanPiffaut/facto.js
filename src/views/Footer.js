@@ -2,6 +2,7 @@ import React from "react";
 import ImageSEO from "../components/ImageSEO";
 import logo from "../assets/footer/facto-footer-logo.svg";
 import sell_automation from "../assets/footer/facto-footer-automatiza-tus-ventas.webp";
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -187,31 +188,31 @@ function Footer() {
                             <div className="row justify-content-center align-items-center h-100 m-0 p-0">
                                 <div
                                     className="col-3 p-0 facto-footer-icon-social text-center text-md-end text-lg-end mb-3 mb-md-0 mb-lg-0">
-                                    <a href="https://www.instagram.com/facto_oficial"
+                                    <Link to="https://www.instagram.com/facto_oficial"
                                        aria-label="Instagram" target="_blank">
                                         <i className="fab fa-instagram text-light fs-3 px-0 px-lg-3"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div
                                     className="col-3 p-0 facto-footer-icon-social text-center text-md-end text-lg-end mb-3 mb-md-0 mb-lg-0">
-                                    <a href="https://www.facebook.com/facto.cl/"
+                                    <Link to="https://www.facebook.com/facto.cl/"
                                        aria-label="Facebook" target="_blank">
                                         <i className="fab fa-facebook-square text-light fs-3 px-0 px-lg-3"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div
                                     className="col-3 p-0 facto-footer-icon-social text-center text-md-end text-lg-end mb-3 mb-md-0 mb-lg-0">
-                                    <a href="https://www.linkedin.com/company/factocl" aria-label="Linkedin"
+                                    <Link to="https://www.linkedin.com/company/factocl" aria-label="Linkedin"
                                        target="_blank">
                                         <i className="fab fa-linkedin text-light fs-3 px-0 px-lg-3"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div
                                     className="col-3 p-0 facto-footer-icon-social text-center text-md-end text-lg-end mb-3 mb-md-0 mb-lg-0">
-                                    <a href="https://www.youtube.com/channel/UCMFPmqT3EVEWn3nqVKuVeFA"
+                                    <Link to="https://www.youtube.com/channel/UCMFPmqT3EVEWn3nqVKuVeFA"
                                        aria-label="Youtube" target="_blank">
                                         <i className="fa-brands fa-square-youtube text-light fs-3 px-0 px-lg-3"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
