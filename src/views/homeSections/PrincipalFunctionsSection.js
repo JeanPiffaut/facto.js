@@ -27,10 +27,10 @@ export const PrincipalFunctionsSection = memo(() => (
                 <FeatureCard src={people_arrow} alt={"Clientes y Proveedores"} text={"Clientes y Proveedores"} description={"Organiza tus clientes y proveedores en un solo lugar: datos de contacto, detalles de facturación, información de cuenta corriente y documentos impagos."} />
                 <FeatureCard src={chain_money} alt={"Pago en Línea"} text={"Pago en Línea"} description={"Cobra con tu link o QR, compártelo dónde quieras y ofrece medios de pago como tarjeta de crédito, débito o transferencia. Integrado en facturas y cotizaciones."} />
             </div>
-            <div className="row d-lg-none">
+            <div className="row d-lg-none pt-5">
                 <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
-                        <CarouselItem src={home_document} alt={"Facturación"} text={"Facturación"} description={"Emite todos tus DTE desde facturas hasta boletas electrónicas, guías de despacho y mucho más."} />
+                        <CarouselItem src={home_document} alt={"Facturación"} text={"Facturación"} description={"Emite todos tus DTE desde facturas hasta boletas electrónicas, guías de despacho y mucho más."} isFirst={true}/>
                         <CarouselItem src={home_document_money} alt={"Cotizaciones"} text={"Cotizaciones"} description={"Genera y envía tus cotizaciones a tus clientes, valores y condiciones personalizadas. Agrega productos de manera rápida y fácil."} />
                         <CarouselItem src={cash_machine} alt={"Caja y Cobranza"} text={"Caja y Cobranza"} description={"Maneja tu caja, apertura, permisos de usuarios y mucho más. ¿Te deben? Activa cobranza automatizada con recordatorio a tus clientes."} />
                         <CarouselItem src={boxes} alt={"Inventario y Bodega"} text={"Inventario y Bodega"} description={"Controla tu stock, identifica ingresos y egresos de productos, define costos, precios de venta y bodegas o ubicaciones. Todos integrados en un solo sistema."} />

@@ -85,6 +85,9 @@ img, svg {
 
 /* Para tamaños de pantalla menores a 992px (large) */
 @media (max-width: 992px) {
+    :root {
+        --topbar-height: 70px;
+    }
     .dropdown {
         width: 100%;
     }
