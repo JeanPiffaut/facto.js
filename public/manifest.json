@@ -1,15 +1,11 @@
 {
-  "short_name": "Plantilla de proyecto",
-  "name": "Plantilla de proyecto",
-  "icons": [
-    {
-      "src": "https://static.facto.cl/sitioweb_1.0/image/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16 192x192 512x512",
-      "type": "image/x-icon"
-    }
-  ],
-  "start_url": ".",
+  "name": "FACTO® - Sistema de ventas y administración gratuito",
+  "short_name": "FACTO",
+  "description": "Sistema de ventas y administración gratuito de Chile | FACTO emite facturas electrónicas gratis y sin límites",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#212529",
-  "background_color": "#FFFFFF"
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "orientation": "portrait",
+  "prefer_related_applications": false
 }

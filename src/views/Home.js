@@ -3,7 +3,10 @@ import MetaTags from "../components/MetaTags";
 import ImageSEO from "../components/ImageSEO";
 import { Link } from "react-router-dom";
 import banner_bg from "../assets/banner-pago-en-linea/background-des.webp";
+import banner_bg_jpg from "../assets/banner-pago-en-linea/background-des.jpg";
+import banner_bg_jpg_min from "../assets/banner-pago-en-linea/background-des-min.jpg";
 import banner_bg_sm from "../assets/banner-pago-en-linea/background-res.webp";
+import banner_bg_sm_jpg from "../assets/banner-pago-en-linea/background-res.jpg";
 import banner_img from "../assets/banner-pago-en-linea/txt-des.webp";
 import banner_img_sm from "../assets/banner-pago-en-linea/txt-res.webp";
 import banner_img_sm_jpg from "../assets/banner-pago-en-linea/txt-res.jpg";
@@ -51,11 +54,11 @@ const DemoForm = memo(() => (
         onSubmit="return validateDemo()"
         data-hs-cf-bound="true"
     >
-        <p className="h4 fw-semibold text-center text-light">
+        <p className="h4 fw-semibold text-center">
             Prueba nuestra <br />
             DEMO en línea
         </p>
-        <div className="form-floating mb-3">
+        <div className="form-floating mb-3 text-dark">
             <input
                 id="name"
                 type="text"
@@ -68,7 +71,7 @@ const DemoForm = memo(() => (
                 Nombre
             </label>
         </div>
-        <div className="form-floating mb-3">
+        <div className="form-floating mb-3 text-dark">
             <input
                 id="email"
                 type="email"
@@ -82,12 +85,12 @@ const DemoForm = memo(() => (
             </label>
         </div>
         <div className="form-floating mb-3">
-            <div className="form-floating mb-3">
+            <div className="form-floating mb-3 text-dark">
                 <input
                     id="phone"
                     type="text"
                     name="phone"
-                    className="form-control input-facto"
+                    className="form-control"
                     placeholder="Teléfono"
                     required
                 />
@@ -106,21 +109,24 @@ const DemoForm = memo(() => (
 ));
 
 const BannerSection = memo(() => (
-    <section>
+    <section className={"pb-5 pb-lg-0"}>
         <div className="banner-bg position-absolute z-n1 w-100">
             <ImageSEO
                 alt={"banner-bg"}
                 sources={[
                     { srcSet: banner_bg, type: "image/webp", media: "(min-width: 992px)" },
-                    { srcSet: banner_bg_sm, type: "image/webp", media: "(min-width: 320px)" }
+                    { srcSet: banner_bg_jpg, type: "image/jpg", media: "(min-width: 992px)" },
+                    { srcSet: banner_bg_sm, type: "image/webp", media: "(min-width: 320px)" },
+                    { srcSet: banner_bg_sm_jpg, type: "image/jpg", media: "(min-width: 320px)" }
                 ]}
                 defaultSrc={banner_bg}
                 height={"800"}
-                placeholderSrc={banner_bg}
+                placeholderSrc={banner_bg_jpg_min}
                 width={"100%"}
+                isCritic={true}
             />
         </div>
-        <div className="banner-content container" style={{ height: "calc(800px - (283px))" }}>
+        <div className="banner-content container">
             <div className="row mt-4 d-inline-flex">
                 <div className="align-items-center col-12 col-lg-8 d-flex">
                     <ImageSEO
@@ -141,7 +147,12 @@ const BannerSection = memo(() => (
                     <a className="d-block d-lg-none my-4 btn btn-secondary btn-lg" href="./registrarse">
                         Regístrate en FACTO
                     </a>
-                    <div className="card border-0">
+                    <div className="card border-0 d-none d-lg-block text-light">
+                        <div className="card-body">
+                            <DemoForm />
+                        </div>
+                    </div>
+                    <div className="card border-0 d-block d-lg-none bg-light text-dark shadow">
                         <div className="card-body">
                             <DemoForm />
                         </div>

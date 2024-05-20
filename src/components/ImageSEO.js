@@ -11,10 +11,10 @@ const ImageSEO = ({ alt, defaultSrc, sources, width, height, placeholderSrc, isC
                 src={placeholderSrc}
                 data-src={defaultSrc}
                 alt={alt}
-                loading={isCritic ? "lazy" : ""}
+                loading={!isCritic ? "lazy" : ""}
                 width={width}
                 height={height}
-                className={isCritic ? "lazyload" : ""}
+                className={!isCritic ? "lazyload" : ""}
             />
         </picture>
     );
