@@ -1,7 +1,0 @@
-<svg id="Componente_7_1" data-name="Componente 7 – 1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-  <path id="mobile-solid" d="M15.938,0H2.813A2.813,2.813,0,0,0,0,2.813V27.188A2.813,2.813,0,0,0,2.813,30H15.938a2.813,2.813,0,0,0,2.813-2.812V2.813A2.813,2.813,0,0,0,15.938,0ZM9.375,28.125A1.875,1.875,0,1,1,11.25,26.25,1.873,1.873,0,0,1,9.375,28.125Z" transform="translate(16 10)" fill="#9cce4a"/>
-  <g id="Elipse_2" data-name="Elipse 2" fill="none" stroke="#9cce4a" stroke-width="1">
-    <circle cx="25" cy="25" r="25" stroke="none"/>
-    <circle cx="25" cy="25" r="24.5" fill="none"/>
-  </g>
-</svg>
