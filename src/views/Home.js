@@ -2,11 +2,9 @@ import React, {memo, Suspense} from "react";
 import MetaTags from "../components/MetaTags";
 import ImageSEO from "../components/ImageSEO";
 import {Link} from "react-router-dom";
-import banner_bg from "../assets/banner-pago-en-linea/background-des.webp";
 import banner_bg_min from "../assets/banner-pago-en-linea/background-des_11zon.webp";
 import banner_bg_sm from "../assets/banner-pago-en-linea/background-res.webp";
 import banner_img from "../assets/banner-pago-en-linea/txt-des.webp";
-import banner_img_sm from "../assets/banner-pago-en-linea/txt-res.webp";
 import banner_img_sm_min from "../assets/banner-pago-en-linea/txt-res_11zon.webp";
 import banner_pc_doc from "../assets/home/pc-doc.webp";
 import banner_bag from "../assets/home/bag.webp";
@@ -31,10 +29,8 @@ const Home = memo(() => {
                 }
                 url={"/"}
             >
-                <link rel="preload" fetchPriority="auto" as="image" href={banner_bg_min} type="image/webp"/>
-                <link rel="preload" fetchPriority="auto" as="image" href={banner_img_sm_min} type="image/webp"/>
-                <link rel="preload" fetchPriority="high" as="image" href={banner_img_sm} type="image/webp"/>
-                <link rel="preload" fetchPriority="high" as="image" href={banner_bg} type="image/webp"/>
+                <link rel="preload" fetchPriority="high" as="image" href={banner_bg_min} type="image/webp"/>
+                <link rel="preload" fetchPriority="high" as="image" href={banner_img_sm_min} type="image/webp"/>
             </MetaTags>
             <BannerSection/>
             <DescriptionSection/>
@@ -53,7 +49,6 @@ const DemoForm = memo(() => (
         id="formDemo-home"
         action="https://conexion.facto.cl/envio_demo.php"
         method="post"
-        onSubmit="return validateDemo()"
         data-hs-cf-bound="true"
     >
         <p className="h4 fw-semibold text-center">
@@ -116,10 +111,10 @@ const BannerSection = memo(() => (
             <ImageSEO
                 alt="banner-bg"
                 sources={[
-                    {srcSet: banner_bg, type: "image/webp", media: "(min-width: 992px)"},
+                    {srcSet: banner_bg_min, type: "image/webp", media: "(min-width: 992px)"},
                     {srcSet: banner_bg_sm, type: "image/webp", media: "(min-width: 320px)"},
                 ]}
-                defaultSrc={banner_bg}
+                defaultSrc={banner_bg_min}
                 placeholderSrc={banner_bg_min}
                 width="1326"
                 height="781"
@@ -134,9 +129,9 @@ const BannerSection = memo(() => (
                         alt={"banner-img"}
                         sources={[
                             {srcSet: banner_img, type: "image/webp", media: "(min-width: 992px)"},
-                            {srcSet: banner_img_sm, type: "image/webp", media: "(min-width: 320px)"},
+                            {srcSet: banner_img_sm_min, type: "image/webp", media: "(min-width: 320px)"},
                         ]}
-                        defaultSrc={banner_img}
+                        defaultSrc={banner_img_sm_min}
                         height={"auto"}
                         placeholderSrc={banner_img_sm_min}
                         width={"100%"}
