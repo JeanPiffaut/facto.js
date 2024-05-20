@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import './components/i18n';
 import reportWebVitals from './config/reportWebVitals';
 import App from "./App";
 import {HelmetProvider} from "react-helmet-async";
