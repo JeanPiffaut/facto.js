@@ -44,7 +44,6 @@ export const OnlinePaymentSection = memo(() => (
                             { srcSet: pago_en_linea, type: "image/webp", media: "(min-width: 320px)" },
                             { srcSet: pago_en_linea, type: "image/webp", media: "(min-width: 450px)" }
                         ]}
-                        loading="lazy"
                     />
                 </div>
             </div>

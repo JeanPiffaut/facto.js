@@ -176,7 +176,7 @@ const DescriptionSection = memo(() => (
                     <div className="row pt-5">
                         <div className="col-12 col-lg-4 text-center">
                             <ImageSEO defaultSrc={banner_pc_doc} placeholderSrc={banner_pc_doc} sources={[]}
-                                      alt={"Aumenta tus ingresos"} height={"60"} width={"76"} loading="lazy"/>
+                                      alt={"Aumenta tus ingresos"} height={"60"} width={"76"}/>
                             <p className={"h4 fw-semibold mt-2"}>
                                 Aumenta <br/>
                                 tus ingresos
@@ -184,7 +184,7 @@ const DescriptionSection = memo(() => (
                         </div>
                         <div className="col-12 col-lg-4 text-center">
                             <ImageSEO defaultSrc={banner_bag} placeholderSrc={banner_bag} sources={[]}
-                                      alt={"Ahorra tiempo"} height={"60"} width={"76"} loading="lazy"/>
+                                      alt={"Ahorra tiempo"} height={"60"} width={"76"}/>
                             <p className={"h4 fw-semibold mt-2"}>
                                 Ahorra <br/>
                                 tiempo
@@ -192,7 +192,7 @@ const DescriptionSection = memo(() => (
                         </div>
                         <div className="col-12 col-lg-4 text-center">
                             <ImageSEO defaultSrc={banner_pc_phone} placeholderSrc={banner_pc_phone} sources={[]}
-                                      alt={"Úsalo en cualquier dispositivo"} height={"60"} width={"76"} loading="lazy"/>
+                                      alt={"Úsalo en cualquier dispositivo"} height={"60"} width={"76"}/>
                             <p className={"h4 fw-semibold mt-2"}>
                                 Úsalo en <br/>
                                 cualquier dispositivo
@@ -209,7 +209,7 @@ const DescriptionSection = memo(() => (
                 <div className="col-12 col-lg-6 text-center mb-5 mb-lg-0">
                     <ImageSEO defaultSrc={people_use} placeholderSrc={people_use} sources={[]}
                               alt={"Diseño completo de funcionalidades para PYMEs y emprendedores"} width={"auto"}
-                              height={"auto"} loading="lazy"/>
+                              height={"auto"}/>
                 </div>
                 <div className="align-items-center col-12 col-lg-6 d-flex text-center">
                     <div>
