@@ -6,6 +6,8 @@ import banner_bg from "../assets/banner-pago-en-linea/background-des.webp";
 import banner_bg_sm from "../assets/banner-pago-en-linea/background-res.webp";
 import banner_img from "../assets/banner-pago-en-linea/txt-des.webp";
 import banner_img_sm from "../assets/banner-pago-en-linea/txt-res.webp";
+import banner_img_sm_jpg from "../assets/banner-pago-en-linea/txt-res.jpg";
+import banner_img_place from "../assets/banner-pago-en-linea/txt-res-min.jpg";
 import banner_pc_doc from "../assets/home/pc-doc.webp";
 import banner_bag from "../assets/home/bag.webp";
 import banner_pc_phone from "../assets/home/pc-phone.webp";
@@ -29,13 +31,12 @@ const Home = memo(() => {
                 }
                 url={"/"}
             />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-            <BannerSection />
-            <DescriptionSection />
+            <BannerSection/>
+            <DescriptionSection/>
             <Suspense fallback={<div>Loading Other sections...</div>}>
-                <OnlinePaymentSection />
-                <PrincipalFunctionsSection />
-                <PartnerSection />
+                <OnlinePaymentSection/>
+                <PrincipalFunctionsSection/>
+                <PartnerSection/>
             </Suspense>
         </>
     );
@@ -117,7 +118,6 @@ const BannerSection = memo(() => (
                 height={"800"}
                 placeholderSrc={banner_bg}
                 width={"100%"}
-                loading="lazy"
             />
         </div>
         <div className="banner-content container" style={{ height: "calc(800px - (283px))" }}>
@@ -127,13 +127,14 @@ const BannerSection = memo(() => (
                         alt={"banner-img"}
                         sources={[
                             { srcSet: banner_img, type: "image/webp", media: "(min-width: 992px)" },
-                            { srcSet: banner_img_sm, type: "image/webp", media: "(min-width: 320px)" }
+                            { srcSet: banner_img_sm, type: "image/webp", media: "(min-width: 320px)" },
+                            { srcSet: banner_img_sm_jpg, type: "image/jpg", media: "(min-width: 320px)" }
                         ]}
                         defaultSrc={banner_img}
                         height={"auto"}
-                        placeholderSrc={banner_img}
+                        placeholderSrc={banner_img_place}
                         width={"100%"}
-                        loading="lazy"
+                        isCritic={true}
                     />
                 </div>
                 <div className="col-12 col-lg-4">
