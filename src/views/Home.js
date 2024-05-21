@@ -2,13 +2,13 @@ import React, {memo, Suspense} from "react";
 import MetaTags from "../components/MetaTags";
 import ImageSEO from "../components/ImageSEO";
 import {Link} from "react-router-dom";
-import banner_bg_min from "../assets/banner-pago-en-linea/background-des_11zon.webp";
-import banner_bg_sm from "../assets/banner-pago-en-linea/background-res.webp";
-import banner_img from "../assets/banner-pago-en-linea/txt-des.webp";
-import banner_img_sm_min from "../assets/banner-pago-en-linea/txt-res_11zon.webp";
-import banner_pc_doc from "../assets/home/pc-doc.webp";
-import banner_bag from "../assets/home/bag.webp";
-import banner_pc_phone from "../assets/home/pc-phone.webp";
+import banner_bg from "../assets/banner-pago-en-linea/background-des_11zon.webp";
+import banner_bg_sm from "../assets/banner-pago-en-linea/background-res_11zon.webp";
+import banner_img from "../assets/banner-pago-en-linea/txt-des_11zon.webp";
+import banner_img_sm from "../assets/banner-pago-en-linea/txt-res_11zon.webp";
+import pc_doc from "../assets/home/pc-doc.webp";
+import bag from "../assets/home/bag.webp";
+import pc_phone from "../assets/home/pc-phone.webp";
 import people_use from "../assets/home/people-use.webp";
 import woocommerce from "../assets/home/woocommerce-img-home.png";
 import jump_seller from "../assets/home/jumpseller-logo-home.webp";
@@ -29,8 +29,10 @@ const Home = memo(() => {
                 }
                 url={"/"}
             >
-                <link rel="preload" fetchPriority="high" as="image" href={banner_bg_min} type="image/webp"/>
-                <link rel="preload" fetchPriority="high" as="image" href={banner_img_sm_min} type="image/webp"/>
+                <link rel="preload" fetchPriority="high" as="image" href={banner_bg} type="image/webp"/>
+                <link rel="preload" fetchPriority="high" as="image" href={banner_bg_sm} type="image/webp"/>
+                <link rel="preload" fetchPriority="high" as="image" href={banner_img} type="image/webp"/>
+                <link rel="preload" fetchPriority="high" as="image" href={banner_img_sm} type="image/webp"/>
             </MetaTags>
             <BannerSection/>
             <DescriptionSection/>
@@ -64,9 +66,7 @@ const DemoForm = memo(() => (
                 placeholder="Súper empresa LTDA."
                 required
             />
-            <label className="control-label" htmlFor="firstname">
-                Nombre
-            </label>
+            <label className="control-label" htmlFor="name">Nombre</label>
         </div>
         <div className="form-floating mb-3 text-dark">
             <input
@@ -77,9 +77,7 @@ const DemoForm = memo(() => (
                 placeholder="misuperempresa@mail.com"
                 required
             />
-            <label className="control-label" htmlFor="email">
-                Email
-            </label>
+            <label className="control-label" htmlFor="email">Email</label>
         </div>
         <div className="form-floating mb-3">
             <div className="form-floating mb-3 text-dark">
@@ -111,11 +109,11 @@ const BannerSection = memo(() => (
             <ImageSEO
                 alt="banner-bg"
                 sources={[
-                    {srcSet: banner_bg_min, type: "image/webp", media: "(min-width: 992px)"},
+                    {srcSet: banner_bg, type: "image/webp", media: "(min-width: 992px)"},
                     {srcSet: banner_bg_sm, type: "image/webp", media: "(min-width: 320px)"},
                 ]}
-                defaultSrc={banner_bg_min}
-                placeholderSrc={banner_bg_min}
+                defaultSrc={banner_bg}
+                placeholderSrc={banner_bg}
                 width="1326"
                 height="781"
                 isCritic={true}
@@ -129,16 +127,17 @@ const BannerSection = memo(() => (
                         alt={"banner-img"}
                         sources={[
                             {srcSet: banner_img, type: "image/webp", media: "(min-width: 992px)"},
-                            {srcSet: banner_img_sm_min, type: "image/webp", media: "(min-width: 320px)"},
+                            {srcSet: banner_img_sm, type: "image/webp", media: "(min-width: 320px)"},
                         ]}
-                        defaultSrc={banner_img_sm_min}
-                        height={"auto"}
-                        placeholderSrc={banner_img_sm_min}
-                        width={"100%"}
+                        defaultSrc={banner_img}
+                        placeholderSrc={banner_img}
+                        width={"1222"}
+                        height={"636"}
+                        style={{width: "100%", height:"auto",aspectRatio:"auto 1222/636"}}
                         isCritic={true}
                     />
                 </div>
-                <div className="col-12 col-lg-4">
+                <div className="col-12 col-lg-4 lazyload">
                     <a className="d-block d-lg-none my-4 btn btn-secondary btn-lg" href="./registrarse">
                         Regístrate en FACTO
                     </a>
@@ -175,7 +174,7 @@ const DescriptionSection = memo(() => (
                     </h2>
                     <div className="row pt-5">
                         <div className="col-12 col-lg-4 text-center">
-                            <ImageSEO defaultSrc={banner_pc_doc} placeholderSrc={banner_pc_doc} sources={[]}
+                            <ImageSEO defaultSrc={pc_doc} placeholderSrc={pc_doc} sources={[]}
                                       alt={"Aumenta tus ingresos"} height={"60"} width={"76"}/>
                             <p className={"h4 fw-semibold mt-2"}>
                                 Aumenta <br/>
@@ -183,7 +182,7 @@ const DescriptionSection = memo(() => (
                             </p>
                         </div>
                         <div className="col-12 col-lg-4 text-center">
-                            <ImageSEO defaultSrc={banner_bag} placeholderSrc={banner_bag} sources={[]}
+                            <ImageSEO defaultSrc={bag} placeholderSrc={bag} sources={[]}
                                       alt={"Ahorra tiempo"} height={"60"} width={"76"}/>
                             <p className={"h4 fw-semibold mt-2"}>
                                 Ahorra <br/>
@@ -191,7 +190,7 @@ const DescriptionSection = memo(() => (
                             </p>
                         </div>
                         <div className="col-12 col-lg-4 text-center">
-                            <ImageSEO defaultSrc={banner_pc_phone} placeholderSrc={banner_pc_phone} sources={[]}
+                            <ImageSEO defaultSrc={pc_phone} placeholderSrc={pc_phone} sources={[]}
                                       alt={"Úsalo en cualquier dispositivo"} height={"60"} width={"76"}/>
                             <p className={"h4 fw-semibold mt-2"}>
                                 Úsalo en <br/>
